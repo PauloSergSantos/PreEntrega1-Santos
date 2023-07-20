@@ -1,19 +1,33 @@
 import { Header } from './components/Header/Header'
 import {ItemListContainer} from './components/ItemListContainer/ItemListContainer'
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import {Contacto} from './components/Contacto/Contacto'
+import {SobreNosotros} from './components/SobreNosotros/SobreNosotros'
+import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer';
 
 function App() {
   
 
   return (
     
-      <div>
-        <Header/>
-      
-        <ItemListContainer nombre="Planta Carnívora Venus Atrapamoscas" id={1} precio={2900}/>
-        <ItemListContainer nombre="Jazmín Del Cabo" id={2} precio={6500}/>
-        <ItemListContainer nombre="Palmera Chamaedorea Elegans" id={3} precio={8500}/>
-      </div>
+    <BrowserRouter> 
+      <Header/>
+
+      <Routes>
+        <Route path='/' element={<ItemListContainer />}/>
+        <Route path='/productos/:categoryId' element={<ItemListContainer />}/>
+        <Route path='/detail/:itemId' element={<ItemDetailContainer/>}/>
+        <Route path='/sobrenosotros' element={<SobreNosotros />}/>
+        <Route path='/contacto' element={<Contacto />}/>
+        <Route path='*' element={<Navigate to={"/"}/>}/>
+      </Routes>
+
+      {/* <Footer/> */}
+  </BrowserRouter>
+  
 
       
 

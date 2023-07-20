@@ -1,0 +1,10 @@
+import './MOCK_DATA.scss'
+
+export const MOCK_DATA = [
+    {id: 1, nombre: "Lazo de amor", descripcion: "La cinta es una planta de maceta ornamental común, adaptable y fácil de mantener. Se la puede cultivar dentro de casa para añadir un toque de verde.", precio: 500, img:"https://www.parati.com.ar/wp-content/uploads/2021/07/LISTON-DEST.jpg", category: "interior"},
+    {id: 2, nombre: "Filodendro longifolio", descripcion: "Son facil cuidado y muy escaso mantenimiento, son plantas de media sombra y solo necesitan un poquito sol temprano a la mañana o muy de tarde.", precio: 3500, img:"https://vivero.lashualtatas.cl/wp-content/uploads/2019/07/filodendrolongifolio.jpg", category: "interior"},
+    {id: 3, nombre: "Aloe vera", descripcion: "Plantas de Aloe Vera - Barbadensis- Sin ningún químico. 25cm de alto, 40 cm de diámetro.", precio: 1200, img:"https://cibercactus.com/wp-content/uploads/2017/12/aloe-vera-joven.jpg", category: "exterior"},
+    {id: 4, nombre: "Geranio", descripcion: "Planta herbacea de hoja perenne ( no las pierde), deslumbra con sus atrayentes flores en epoca de primavera, verano y hasta principios del otoño.", precio: 1050, img:"https://www.parati.com.ar/wp-content/uploads/2021/10/GERANIOS-DESTACADA-749x561.jpg.webp", category: "exterior"},
+    {id: 5, nombre: "Cactus Santa Teresita", descripcion: "Es un atractivo cactus originario de las junglas de las regiones tropicales de Sudamérica. Se trata de una planta epifita, es decir, que crece sobre la rama de otro árbol para usarla como soporte más que en la tierra.", precio: 3000, img:"https://s2.ppllstatics.com/lasprovincias/www/multimedia/202112/24/media/cortadas/cactus-navidad-k8AC-U1603605632562dH-1248x770@Las%20Provincias.jpg", category: "decoracion"},
+    {id: 6, nombre: "Ficus Artificial", descripcion: "Planta Artificial Ficus Pandurata Alto Con Maceta 74cm. ¡Es hora de incluirlas en tu decoración! Atrévete a darle más color y armonía a tu hogar, oficina, eventos y sin complicaciones.", precio: 1800, img:"https://cdn.cactusdeco.com/745-thickbox_default/planta-artificial-ficus.jpg", category: "decoracion"},
+]
